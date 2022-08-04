@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Steganography</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--google font montserrat-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat: 400,500,800" rel="stylesheet">
+	<!--Google font over-->
+</head>
+
+<body>
+	<header>
+	</header>
+	<div class="container-fluid" style="background-image:linear-gradient(to right,#ffffff); height: 1000px; ">
+		<div class="container"
+			style="background-color: #f2f2f2; border-radius: 10px; padding-top: 1%; padding-bottom: 1%; min-height: fit-content; opacity: 1;">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 style="font-family: Montserrat; font-weight: 900; text-align: center; padding-bottom: 2%;">
+						Steganography Online</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="encode.html" class="btn btn-primary" style=" 
+									background:#95a5a6; 
+									border-color: transparent;
+									font-family: Montserrat;
+									font-weight: 400;
+									padding: 10px 20px 10px 20px;
+									border-radius: 10px;
+									">
+						Encode
+					</a>
+					<a href="#" type="submit" class="btn btn-primary" style=" 
+									background:#000000; 
+									border-color: transparent;
+									font-family: Montserrat;
+									font-weight: 400;
+									padding: 10px 20px 10px 20px;
+									border-radius: 10px;">
+						Decode
+					</a>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-12">
+					<p style="font-family: Montserrat; font-weight: 600; text-align: left; font-size: 25px;">Decode
+						image</p>
+					<p>To decode a hidden message from an image, just choose an image and hit the Decode button.
+
+						Neither the image nor the message that has been hidden will be at any moment transmitted over
+						the web, all the magic happens within your browser.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="padding-top: 1%; padding-bottom: 1%;">
+			<form id="addDecodingFileForm" enctype="multipart/form-data">
+				<div class="row" style="margin-bottom: 2%;">
+					<div class="col-sm-12">
+						<label class="form-label" for="encodedFile"
+							style="font-family: Montserrat; font-weight: 600; text-align: left; font-size: 25px;">Upload
+							your image here</label>
+						<input type="file" class="form-control" id="encodedFile" name="encodedFile" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="submit" class="btn btn-primary" style=" 
+										background:#000000; 
+										border-color: transparent;
+										font-family: Montserrat;
+										font-weight: 400;
+										padding: 10px 20px 10px 20px;
+										border-radius: 10px;
+										margin-bottom: 2%;
+										">
+							Decode
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="LoadingSpinner/loading-spinner.js"></script>
+	<script language="javascript" src="js/main.js"></script>
+</body>
+
+</html>

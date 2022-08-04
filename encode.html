@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Steganography</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--google font montserrat-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat: 400,500,800" rel="stylesheet">
+	<!--Google font over-->
+</head>
+
+<body>
+	<header>
+	</header>
+	<div class="container-fluid" style="background-image:linear-gradient(to right,#ffffff); height: 1000px; ">
+		<div class="container"
+			style="background-color: #f2f2f2; border-radius: 10px; padding-top: 1%; padding-bottom: 1%; min-height: fit-content; opacity: 1;">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 style="font-family: Montserrat; font-weight: 900; text-align: center; padding-bottom: 2%;">
+						Steganography Online</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="#" class="btn btn-primary" style=" 
+									background:#000000; 
+									border-color: transparent;
+									font-family: Montserrat;
+									font-weight: 400;
+									padding: 10px 20px 10px 20px;
+									border-radius: 10px;
+									">
+						Encode
+					</a>
+					<a href="decode.html" class="btn btn-primary" style=" 
+									background:#95a5a6; 
+									border-color: transparent;
+									font-family: Montserrat;
+									font-weight: 400;
+									padding: 10px 20px 10px 20px;
+									border-radius: 10px;">
+						Decode
+					</a>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-12">
+					<p style="font-family: Montserrat; font-weight: 600; text-align: left; font-size: 25px;">Encode
+						message</p>
+					<p>
+						To encode a message into an image, choose the image you want to use, enter your text and hit the
+						Encode button.
+						Save the last image, it will contain your hidden message.
+						Remember, the more text you want to hide, the larger the image has to be. In case you chose an
+						image that is too small to hold your message you will be informed.
+
+						Neither the image nor the message you hide will be at any moment transmitted over the web, all
+						the magic happens within your browser.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<form id="addEncodingFileForm" enctype="multipart/form-data">
+				<div class="row" style="padding-top: 1%; padding-bottom: 1%;">
+					<div class="col-sm-12">
+						<label class="form-label" for="file"
+							style="font-family: Montserrat; font-weight: 600; text-align: left; font-size: 25px;">Upload
+							your image here</label>
+						<input type="file" class="form-control" id="file" name="file" />
+					</div>
+				</div>
+				<div class="row" style="padding-top: 1%; padding-bottom: 1%;">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label for="text_message"
+								style="font-family: Montserrat; font-weight: 600; text-align: left; font-size: 25px;">Type
+								Here</label>
+							<input type="text" class="form-control" id="text_message" name="text_message"
+								placeholder="Enter your message here"/>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding-top: 1%; padding-bottom: 1%;">
+					<div class="col-sm-12">
+						<button type="submit" class="btn btn-primary" style=" 
+										background:#000000; 
+										border-color: transparent;
+										font-family: Montserrat;
+										font-weight: 400;
+										padding: 10px 20px 10px 20px;
+										border-radius: 10px;
+										margin-bottom: 2%;
+										">
+							Encode
+						</button>
+					</div>
+				</div>
+			</form>
+			<div class="row" style="padding-top: 1%; padding-bottom: 1%;">
+				<div class="col-sm-12">
+					<img src="1.png" alt="img" id="image_view">
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript" src="LoadingSpinner/loading-spinner.js"></script>
+	<script language="javascript" src="js/main.js"></script>
+</body>
+
+</html>
